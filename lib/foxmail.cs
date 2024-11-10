@@ -41,7 +41,6 @@ namespace Fengshen.Lib
             string accountsDirectory =  dir + "\\Accounts";
             if (Directory.Exists(accountsDirectory))
             {
-                //Console.WriteLine($"dir目录为:{dir},accountsDirectory：{accountsDirectory}");
                 string currentDirectory = Directory.GetCurrentDirectory();
                 string zipFileName = $"{Path.GetFileName(dir)}.zip";
                 string zipFilePath = Path.Combine(currentDirectory, zipFileName);
