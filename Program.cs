@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using Microsoft.Win32;
+using Fengshen.Lib; 
 
-class Fengshen
+class Program
 {
     static List<string> targetApps = new List<string>
     {
@@ -20,6 +21,7 @@ class Fengshen
             if (installPath != null)
             {
                 Console.WriteLine($"[+] {app} install path: {installPath}.");
+                SelectLib.Select(app,installPath);
             }
             else
             {
